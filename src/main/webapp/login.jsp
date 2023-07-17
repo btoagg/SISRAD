@@ -1,0 +1,89 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<title>Login</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.jsp">
+                    <img src="assets/img/Logo-utez.png" alt="Logo" width="70" height="30" class="d-inline-block align-text-top">
+                    SISRAD
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">SISRAD</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link"href="index.jsp">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.jsp">Acceder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.utez.edu.mx/">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<body>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-4">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+
+            <!--Aqui hare mi formulario-->
+            <center>
+                <div class="content">
+
+                    <h4>
+                        <br>
+
+                        <center>Sistema de <br>
+                            Reincorporación
+                            (Alumnos) </center>
+                    </h4>
+
+                    <br>
+                    <form action="#" method="get">
+                        <center>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Usuario:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </center>
+                    </form>
+                </div>
+            </center>
+            <br><br>
+            </script>
+    </body>
+</html>
