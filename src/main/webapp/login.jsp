@@ -66,21 +66,33 @@
                     </h4>
 
                     <br>
-                    <form action="#" method="get">
-                        <center>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Usuario:</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <c:if test="${not empty sesion}">
+                                    <c:if test="${not empty tipoSesion}">
+                                    </c:if>
+                                </c:if>
+                                <c:if test="${empty sesion}">
+                                <div class="mb-3">
+                                <form action="login" method="post">
+                                        <label>Correo:</label>
+                                        <input type="email" class="form-control" name="correo" aria-describedby="emailHelp" required="">
+                                </div>
+
+                                    <br/>
+                                <div class="mb-3">
+                                        <lable>Contraseña:</lable>
+                                        <input type="password" class="form-control" name="contra" required="">
+                                </div>
+
+                                    <br/>
+                                        <input type="submit" value="Iniciar sesión" href="formularioAlumno.jsp">
+                                    </form>
+                                </c:if>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Ingresar</button>
-                        </center>
-                    </form>
+                        </div>
+                    </div>
                 </div>
             </center>
             <br><br>
